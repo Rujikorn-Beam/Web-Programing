@@ -1,0 +1,179 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(125deg,#e74c3c,#f39c12,#2ecc71,#3498db,#8e44ad);
+    background-size: 400%;
+    animation: bganimation 15s infinite;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    justify-content: center;
+}
+
+.header
+{
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.Back
+{
+    float: left;
+    height: 50px;
+    width: 150px;
+    background: rgba(66, 66, 66, 0.5);
+    border: none;
+    color: #000;
+    border-bottom-right-radius: 25px;
+
+}
+
+.Back:hover
+{
+    background: rgba(100, 100, 100, 0.5);
+    cursor: pointer;
+
+}
+
+.Home
+{
+    float: right;
+    height: 50px;
+    width: 150px;
+    background: rgba(66, 66, 66, 0.5);
+    border: none;
+    color: white;
+    border-bottom-left-radius: 25px;
+
+}
+
+.Home:hover
+{
+    background: rgba(100, 100, 100, 0.5);
+    cursor: pointer;
+
+}
+
+.Content
+{
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    
+}
+
+h1
+{
+    color: #fff;
+    margin-bottom: 70px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.search-field
+{
+    height: 50px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    justify-content: center;
+}
+
+.Movie
+{
+    width: 400px;
+}
+
+.type
+{
+    width: 200px;
+}
+
+.type option {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 3%;
+  }
+
+.search-btn
+{
+    height: 50px;
+    width: 150px;
+    background: #eb3b5a;
+    border: none;
+    color: #000;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.search-btn:hover
+{
+    background: #fc5c65;
+    cursor: pointer;
+
+}
+
+.form-box
+{
+    background: rgba(0,0,0,0.5);
+    padding: 30px;
+    
+    border-radius: 25px;
+}
+
+@keyframes bganimation
+{
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+img{
+    height: 200px;
+    width: auto;
+}
+.tt{
+background-color: rgba(255, 255, 255, 0.644);
+text-decoration: none;
+padding: auto;
+margin: 10px;
+text-align: left;
+width: 50%;
+margin-left: auto;
+margin-right: auto ;
+justify-content: center;
+}
+@media screen and (max-width: 700px){
+    h1{
+        font-size: x-large;
+        text-align: center;
+    }
+    .search-field{
+        width: auto;
+        margin: 1%;
+    }
+    .type{
+    width: 60%;
+    
+    }
+    .search-btn{
+        margin: 1%;
+    }
+    
+}   
+

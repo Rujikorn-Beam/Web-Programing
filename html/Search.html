@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Search</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <script src="../java/search.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <div class="header">
+
+        <button class="Back" type="button" onclick="window.location.href='homepage.html'">Home Page</button>
+        <button class=" Home" type="button" onclick="javascript:location.href=''">Back</button>
+
+    </div>
+    <div class="Content" id='AA'>
+        <form>
+            <h1>Find Your favorite Movies</h1>
+            <div class="form-box">
+                <input type="text" class="search-field Movie" placeholder="Title..." id='mediatitle'>
+                <select id='mediatype' name="type" class="search-field type">
+                    <option value="All">All</option>
+                    <option value="Cartoon">Cartoon</option>
+                    <option value="Movie">Movie</option>
+                </select>
+
+                <!-- <input type="text" class="search-field Location" placeholder="type : Movie, Cartoon" id='mediatype'> -->
+                <button class="search-btn" type="button" onclick="getResults()">Search</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- <footer>
+        <p>Copyright © 2021. All rights reserved. Privacy Policy</p>
+    </footer> -->
+
+</body>
+
+</html>

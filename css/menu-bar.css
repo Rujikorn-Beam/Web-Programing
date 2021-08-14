@@ -1,0 +1,282 @@
+  .menu-bar {
+  background-color: #26292c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  box-sizing: border-box;
+  align-content: center;
+  position:sticky;
+}
+
+.item {
+  height: 100%;
+  color: white;
+  background-color: transparent;
+  font-size: 18px;
+  display: inline-block;
+  box-sizing: border-box; 
+  padding: 14px 20px;
+  /* margin-right: 10px; */ 
+}
+
+
+.item img { /* Flexbox Gallery Layout*/
+  display: block;
+  height: 100%;
+}
+
+.item.title {
+  font-weight: 600;
+}
+
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+div {
+  text-align: center;
+  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* font*/
+}
+
+.slide{
+  width: auto;   /* 1000 450*/
+  height: auto;
+  margin-right: 15%;
+  margin-left: 15%;
+  margin-top: 20px; /* ห่างจากด้านบน*/
+  box-shadow: 5px 5px 10px 10px rgba(50,50,50,.4);
+  overflow: hidden;
+  border: 5px solid #c6d2df;
+  border-radius: 5px;
+  
+}
+
+.slide figure img{
+  width: 20%;
+  height: auto;
+  float: left;
+}
+
+.slide figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0px;
+  animation: krutom 15s infinite linear;
+}
+
+.slide-small{
+  width: 250px;
+  height: 350px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px; /* ห่างจากด้านบน */
+  box-shadow: 5px 5px 10px 10px rgba(50,50,50,.4);
+  overflow: hidden;
+  border: 5px solid #c6d2df;
+  border-radius: 5px;
+}
+
+.slide-small figure img{
+  width: 250px;
+  height: 350px;
+  float: left;
+}
+
+.slide-small figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0px;
+  animation: krutom 15s infinite linear;
+}
+  /* text กำหนดลักษณะ */
+a{
+  text-decoration: none; 
+}
+@keyframes krutom{
+  0%{left:0%;}
+  15%{left:0%;}
+  20%{left:-100%;}
+  35%{left:-100%;}
+  40%{left:-200%;}
+  60%{left:-200%;}
+  65%{left:-300%;}
+  80%{left:-300%;}
+  85%{left:-400%;}
+  1000%{left:-400%;}
+
+} 
+/*----------------------------------------------------------------------------------------------*/
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #a2adb1;
+}
+
+.container:hover .overlay {  /* ความทึบ*/
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*------------------------------------------------------------------*//* Flexbox Gallery Layout*/
+.gallery-wrapper {
+  background-color: black;
+  box-sizing: border-box ;
+  height: 250px;
+  overflow: hidden;
+}
+
+.gallery-scroll {
+
+  box-sizing: border-box ;
+  height: 250px ;
+  overflow-x: auto ;
+  overflow-y: hidden ;
+}
+
+.gallery {
+  background-color: black;
+  display: flex;
+  box-sizing: border-box;
+  width: max-content;
+  height: 235px ;
+  padding: 0px 8px;
+}
+/* change color scroll */
+/* .gallery-scroll::-webkit-scrollbar {
+  width: 10px;
+} */
+.gallery-scroll::-webkit-scrollbar{
+  width:10px
+}
+/* Track */
+.gallery-scroll::-webkit-scrollbar-track {
+  background: #26292c;
+    border-radius: 25px;; 
+}
+ 
+/* Handle */
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 25px; 
+}
+
+/* Handle on hover */
+.gallery-scroll::-webkit-scrollbar-thumb:hover {
+  background: #dbdbdb;
+}
+/*-------[End] change color scroll---- */
+
+
+/* Bottom right text */
+.container-text {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/*----------Button movie cartoon homepage-------------*/
+.button {
+  border-radius: 4px;
+  background-color: #26292c;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+article{
+  margin-top: 3% ;
+  margin-left: 15%;
+  color: white;
+  } 
+
+/* --------footer----------------- */ 
+footer{
+  position: initial;
+  background-color: #1a1a1a96 ;
+  padding: 3px;
+  text-align: center;
+  color:#F8F9F9;
+  
+}
+@media screen and (max-width: 700px){
+  .button{
+    width: 100px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+}

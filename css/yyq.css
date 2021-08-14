@@ -1,0 +1,30 @@
+
+footer{
+ color: white;
+    text-align: center;
+}
+
+.container{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+.column{
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 25%;
+    background-color: rgb(177, 177, 177);
+    border: solid #494949 4px;
+}
+.info-text{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h2{
+    color: white;
+}
